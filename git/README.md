@@ -11,8 +11,8 @@ For using it, you can choose from two options:
    checks for that git repository.
 
    ```bash
-   git clone git@github.com:bizzappdev/maintainer-quality-tools.git ${HOME}/lint-hook
-   ln -sf ${HOME}/lint-hook/git/* {YOUR_PROJECT}/.git/hooks/.
+   git clone git@github.com:bizzappdev/maintainer-quality-tools.git ~/lint-hook
+   ln -sf ~/lint-hook/git/* /usr/share/git-core/templates/hooks/
    ```
 
 2. Create symbolic link of files to git template directory.
