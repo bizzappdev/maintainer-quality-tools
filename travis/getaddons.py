@@ -105,7 +105,7 @@ def get_modules_changed(path, ref='HEAD'):
         if '/' in item_changed]
     )
     modules = set(get_modules(path))
-    modules_changed = list(modules & folders_changed)
+    modules_changed = list(modules)
     modules_changed_path = [
         os.path.join(path, module_changed)
         for module_changed in modules_changed]
